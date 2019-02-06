@@ -18,6 +18,7 @@ namespace Heranca_Polimorfismo.Entities
 
         public override string PriceTag()
         {
+            //                                                                                                       or ManufactureDate.ToString("dd/MM/yyyy")
             return (Name + " (Used) $ " + Price.ToString("F2", CultureInfo.InvariantCulture) + " (Manufacture date: " + ManufactureDate.ToShortDateString() + ")");
         }
     }
